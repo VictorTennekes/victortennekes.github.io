@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Projects · Victor Tennekes</title>
-  <meta name="description" content="Selected projects by Victor Tennekes: OTTO and a BI tool migration.">
+  <meta name="description" content="Selected projects by Victor Tennekes: a conversational analytics agent and a BI tool migration.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Victor Tennekes">
   <meta property="og:title" content="Projects · Victor Tennekes">
-  <meta property="og:description" content="Selected projects by Victor Tennekes: OTTO and a BI tool migration.">
+  <meta property="og:description" content="Selected projects by Victor Tennekes: a conversational analytics agent and a BI tool migration.">
   <meta property="og:url" content="https://victortennekes.github.io/projects.html">
   <meta property="og:image" content="https://victortennekes.github.io/og.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -35,13 +35,14 @@
   <h1>Projects</h1>
 
   <section class="project">
-    <h2>OTTO</h2>
+    <h2>Conversational analytics agent · OTTO</h2>
     <div class="prose">
-      <p>Dott's conversational analytics agent. I designed it, built it and keep it running. Ask a question in Slack, get an answer drawn from the warehouse.</p>
+      <p>Built for Dott. I designed it, built it and keep it running. Ask a question from Claude through its MCP server, or in the web UI, and get an answer drawn from the warehouse.</p>
+      <p>It opens quick analytics up to the whole company, no SQL needed. And it's more accurate than a generic LLM pointed at the same warehouse, because it's grounded in a knowledge base of Dott's actual metrics and business definitions: it answers the way the business defines things, not with a best guess.</p>
     </div>
     <dl class="kv">
       <dt>stack</dt><dd>Python, FastAPI, GKE, MCP</dd>
-      <dt>surfaces</dt><dd>Slack, web UI, MCP server. All behind SSO</dd>
+      <dt>surfaces</dt><dd>MCP server into Claude, web UI, Slack. All behind SSO</dd>
       <dt>coverage</dt><dd>6,400+ tables</dd>
       <dt>tests</dt><dd>1,400+ unit tests</dd>
       <dt>adoption</dt><dd>~1,150 sessions in the first two months</dd>
