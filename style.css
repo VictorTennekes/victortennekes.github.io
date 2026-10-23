@@ -24,7 +24,6 @@ h1, h2, p, dl, dd { margin: 0; }
 .top nav a { color: var(--dim); text-decoration: none; }
 .top nav a:hover { color: var(--text); }
 .top nav a[aria-current] { color: var(--text); }
-.top nav a[aria-current]::before { content: "$ "; color: var(--green); font-weight: 600; }
 
 /* Content */
 h1 { font-size: 15px; font-weight: 600; margin-bottom: 28px; }
