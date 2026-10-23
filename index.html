@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victor Tennekes</title>
+  <meta name="description" content="Victor Tennekes — Senior Data Engineer. Runs Dott's production data platform end to end: Kubernetes, IaC, pipelines, alerting and the incidents in between.">
+  <meta name="theme-color" content="#181825">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e1e2e'/%3E%3Ctext x='16' y='22' font-family='JetBrains Mono,monospace' font-size='16' font-weight='600' fill='%2389b4fa' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<main class="window" aria-label="Resume">
+  <div class="titlebar" aria-hidden="true">
+    <span class="lights"><i></i><i></i><i></i></span>
+    <span class="title">victor@tennekes — ~/resume</span>
+  </div>
+
+  <div class="screen">
+
+    <!-- whoami -->
+    <section>
+      <p class="prompt"><span class="ps1">$</span> whoami</p>
+      <header class="who">
+        <h1>Victor Tennekes</h1>
+        <p class="role">Senior Data Engineer</p>
+        <p class="meta">Amsterdam, The Netherlands</p>
+        <ul class="links">
+          <li><span class="k">github</span><a href="https://github.com/victortennekes">victortennekes</a></li>
+          <li><span class="k">linkedin</span><a href="https://www.linkedin.com/in/victortennekes">victortennekes</a></li>
+          <li><span class="k">mail</span><a href="mailto:victortennekes@icloud.com">victortennekes@icloud.com</a></li>
+          <li><span class="k">pdf</span><a href="Victor-Tennekes-Resume.pdf" download>Victor-Tennekes-Resume.pdf</a></li>
+        </ul>
+      </header>
+    </section>
+
+    <!-- summary -->
+    <section>
+      <p class="prompt"><span class="ps1">$</span> cat summary.md</p>
+      <p class="lead">Senior Data Engineer who runs Dott's production data platform end to end: Kubernetes, IaC, pipelines, alerting and the incidents in between.</p>
+      <p>Four years operating a GCP data platform: 100+ production pipelines on self-managed GKE, deployed through ArgoCD and Helm and provisioned with Terraform. I lead upgrades and migrations with staged rollouts, CI validation and documented rollbacks, take on-call incidents from root cause to postmortem, and tune cost and capacity from job-log evidence. I learned to code in C and C++ before AI tools existed, and now build and ship AI systems myself, verifying what they produce.</p>
+    </section>
+
+    <!-- experience -->
+    <section>
+      <p class="prompt"><span class="ps1">$</span> cat experience.md</p>
+
+      <article class="org">
+        <div class="org-head">
+          <h2>Dott</h2>
+          <p class="meta">Full-time · 4 yrs 5 mos · Amsterdam, The Netherlands</p>
+        </div>
+
+        <div class="job">
+          <h3>Senior Data Engineer</h3>
+          <p class="meta">May 2023 – Present · Data Engineer I → II → Senior</p>
+          <ul class="bullets">
+            <li><b>Own</b> Dott's production data platform end to end: 100+ Airflow pipelines on self-managed Kubernetes (GKE), deployed via GitOps (ArgoCD, Helm) and provisioned in Terraform.</li>
+            <li><b>Lead</b> incident response for the platform: triage, root cause, recovery and postmortems, including restoring business-critical finance reporting, then automate recovery so failures don't recur.</li>
+            <li><b>Deliver</b> major platform changes safely: migrations and version upgrades across dev, staging and production with CI validation, backups and rollback plans.</li>
+            <li><b>Built</b> the platform's observability: AI-assisted root-cause analysis on alerts, actionable Slack alerting and pipeline metrics for SLA tracking.</li>
+            <li><b>Drive</b> cost and capacity work from evidence: job-log analysis to right-size workloads, cut query scans and decommission unused systems.</li>
+            <li><b>Manage</b> infrastructure security as code: IAM, access control and PII policy in Terraform, plus security patching of the platform.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Data Engineer Intern</h3>
+          <p class="meta">Mar 2022 – Feb 2023</p>
+        </div>
+      </article>
+
+      <article class="org">
+        <div class="org-head">
+          <h2>42Heilbronn</h2>
+          <p class="meta">Part-time · 1 yr 1 mo · Heilbronn, Germany</p>
+        </div>
+        <div class="job">
+          <h3>Heilbronn Assistant Team</h3>
+          <ul class="bullets">
+            <li>Supported participants on technical and curriculum questions; reviewed code and supervised exams.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- projects -->
+    <section>
+      <p class="prompt"><span class="ps1">$</span> ls projects/</p>
+
+      <article class="project">
+        <h2>OTTO</h2>
+        <p>Designed, built and operate Dott's conversational analytics agent. Python/FastAPI on GKE, served via Slack, web and an MCP server behind SSO. Covers 6,400+ tables, backed by 1,400+ unit tests, with ~1,150 sessions in its first two months.</p>
+      </article>
+
+      <article class="project">
+        <h2>BI Tool Migration</h2>
+        <p>Led the evaluation and proof of concept for 3 applications to replace Tableau. Self-hosted on GKE via ArgoCD behind IAP, on BigQuery and dbt.</p>
+      </article>
+    </section>
+
+    <!-- skills -->
+    <section>
+      <p class="prompt"><span class="ps1">$</span> cat skills.md</p>
+      <div class="cols">
+        <div>
+          <h2>Top Skills</h2>
+          <ul class="list">
+            <li>Kubernetes (GKE), ArgoCD, Helm</li>
+            <li>Terraform / IaC, IAM</li>
+            <li>Airflow, dbt, BigQuery</li>
+            <li>Incident response &amp; alerting</li>
+            <li>Python, SQL</li>
+            <li>LLM agents &amp; MCP</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Coding</h2>
+          <ul class="list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>C++</li>
+            <li>C</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Languages</h2>
+          <ul class="list">
+            <li>Dutch</li>
+            <li>English</li>
+            <li>German</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- education -->
+    <section>
+      <p class="prompt"><span class="ps1">$</span> cat education.md</p>
+      <article class="org">
+        <div class="org-head">
+          <h2>CODAM</h2>
+          <p class="meta">Full-time · 2019 – 2023 · Amsterdam, The Netherlands</p>
+        </div>
+        <p>CODAM is a full-time, tuition-free programming college in Amsterdam, using a unique peer-learning curriculum. Part of the global 42 network, CODAM collaborates with 33 campuses in 21 countries, educating over 9,000 students worldwide.</p>
+      </article>
+
+      <article class="org">
+        <div class="org-head">
+          <h2>Licenses</h2>
+        </div>
+        <p>Scrum Foundation · Share a Byte · February 2020</p>
+      </article>
+    </section>
+
+    <p class="prompt end"><span class="ps1">$</span> <span class="cursor" aria-hidden="true"></span></p>
+
+  </div>
+</main>
+
+</body>
+</html>
