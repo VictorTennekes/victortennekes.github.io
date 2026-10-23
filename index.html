@@ -15,7 +15,15 @@
 <body>
 
 <main class="page">
-  <h1>Victor Tennekes <span>· Amsterdam</span></h1>
+  <header class="top">
+    <a class="name" href="./">Victor Tennekes <span>· Amsterdam</span></a>
+    <nav aria-label="Pages">
+      <a href="stack.html">stack</a>
+      <a href="oncall.html">on-call</a>
+      <a href="projects.html">projects</a>
+      <a href="timeline.html">timeline</a>
+    </nav>
+  </header>
 
   <div class="prose">
     <p>I'm a senior data engineer. I run <a href="https://ridedott.com">Dott</a>'s production data platform end to end: a hundred-odd Airflow pipelines on self-managed Kubernetes, deployed with ArgoCD and Helm, provisioned in Terraform. When it breaks I'm on call. Root cause, recovery, postmortem, then automate the fix so it can't happen that way twice.</p>
@@ -25,22 +33,6 @@
     <p>I learned to code in C and C++ at <a href="https://www.codam.nl">CODAM</a>, before AI tools existed. I think that still matters. I can read what a model writes, and I don't ship what I can't verify.</p>
 
     <p class="links">Elsewhere: <a href="https://github.com/victortennekes">GitHub</a>, <a href="https://www.linkedin.com/in/victortennekes">LinkedIn</a>, <a class="mail" href="#" data-e="moc.duolci@sekennetrotciv">email</a>.</p>
-  </div>
-
-  <hr>
-
-  <p class="hint">A few files, if you want more detail. Click one to open it, or type a command like <code>cat README.md</code>.</p>
-
-  <div class="term" id="term">
-    <div class="block">
-      <p class="cmd"><b>ls</b></p>
-      <p class="res ls" id="ls0"></p>
-    </div>
-    <div id="out" class="term"></div>
-    <form class="prompt" id="form" autocomplete="off">
-      <span class="ps">$</span>
-      <input id="in" type="text" placeholder="type a command, or click a file above" aria-label="command" spellcheck="false" autocapitalize="off">
-    </form>
   </div>
 </main>
 
