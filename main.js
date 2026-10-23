@@ -22,6 +22,7 @@
   /** @type {string[]} */
   const history = [];
   let hi = 0;
+  const hasPointer = window.matchMedia('(hover: hover)').matches;
 
   /** Wire obfuscated email links: first click reveals and arms mailto, second click opens. @param {ParentNode} root */
   function demail(root) {
@@ -94,7 +95,7 @@
     const cmd = document.createElement('p'); cmd.className = 'cmd'; cmd.innerHTML = '<b>' + esc(line) + '</b>'; block.appendChild(cmd);
     const res = document.createElement('p'); res.className = 'res'; res.innerHTML = exec(name, arg); block.appendChild(res);
     out.appendChild(block); demail(block);
-    form.scrollIntoView({ block: 'nearest' });
+    block.scrollIntoView({ block: 'nearest' });
   }
 
   /** @param {string} v @returns {string | null} */
@@ -125,9 +126,9 @@
   term.addEventListener('click', function (e) {
     const target = /** @type {HTMLElement} */ (e.target);
     const f = target.closest('[data-cmd]');
-    if (f) { run(f.getAttribute('data-cmd') || ''); input.focus(); return; }
+    if (f) { run(f.getAttribute('data-cmd') || ''); if (hasPointer) input.focus(); return; }
     if (target.closest('a')) return;
     if (String(window.getSelection && window.getSelection())) return;
-    input.focus();
+    if (hasPointer) input.focus();
   });
 })();
