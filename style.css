@@ -17,7 +17,7 @@ h1, h2, p, dl, dd { margin: 0; }
 .page { width: 100%; max-width: 800px; margin: auto; padding-block: 72px 80px; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
 
 /* Top row */
-.top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px 32px; flex-wrap: wrap; margin-bottom: 56px; }
+.top { display: flex; align-items: baseline; gap: 12px 48px; flex-wrap: wrap; margin-bottom: 56px; }
 .name { color: var(--text); font-weight: 600; text-decoration: none; }
 .name span { color: var(--dim); font-weight: 400; }
 .top nav { display: flex; gap: 22px; flex-wrap: wrap; }
