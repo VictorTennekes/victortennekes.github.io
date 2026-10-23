@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Stack · Victor Tennekes</title>
   <meta name="description" content="What Victor Tennekes runs Dott's data platform on.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Victor Tennekes">
+  <meta property="og:title" content="Stack · Victor Tennekes">
+  <meta property="og:description" content="What Victor Tennekes runs Dott's data platform on.">
+  <meta property="og:url" content="https://victortennekes.github.io/stack.html">
+  <meta property="og:image" content="https://victortennekes.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0c0d11">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +34,7 @@
 
   <h1>Stack</h1>
   <dl class="kv">
-    <dt>runtime</dt><dd>Kubernetes, self-managed on GKE</dd>
+    <dt>runtime</dt><dd>Kubernetes on GKE. I deploy and debug our apps on the platform team's cluster; before that I ran our own cluster for the old Airflow</dd>
     <dt>delivery</dt><dd>ArgoCD and Helm, GitOps</dd>
     <dt>infra</dt><dd>Terraform, IAM. Security and PII policy as code</dd>
     <dt>pipelines</dt><dd>Airflow, 100+ in production</dd>
